@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "print_array.h"
 #include "merge_sort.h"
 
@@ -11,6 +12,8 @@ int main(int argc, char *argv[])
   printf("Merge sort: ");
   print_array(size, output);
   printf("\n");
+
+  free(output);
 
   return 0;
 }
