@@ -1,8 +1,10 @@
 main: print_array.o merge_sort.o
 
-test: main
-	./main
-
 clean:
-	rm main
-	rm *.o
+	rm -f main
+	rm -f *.o
+
+rebuild: clean main
+
+test: rebuild
+	./main
