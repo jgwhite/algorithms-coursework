@@ -1,7 +1,8 @@
-all: test
+main: print_array.o merge_sort.o
 
-test: hello
-	./hello
+test: main
+	./main
 
 clean:
-	rm hello
+	rm main
+	rm *.o
