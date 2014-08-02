@@ -8,9 +8,11 @@ int *merge_sort(int size, int array[])
     return array;
   }
 
-  // Create sorted sub-arrays by recursion.
+  // Determine sizes of sub-arrays.
   int s1 = size / 2;
   int s2 = size - s1;
+
+  // Create sorted sub-arrays by recursion.
   int *a = merge_sort(s1, array);
   int *b = merge_sort(s2, array + s1);
 
